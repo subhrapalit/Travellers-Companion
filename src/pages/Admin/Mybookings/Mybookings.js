@@ -19,7 +19,7 @@ const Mybookings = () => {
             .then(data => {
                 console.log(data);
                 if (data.deletedCount) {
-                    alert('Sure to Delete This Booking?')
+                    alert('Sure to Delete this Booking?')
                     const remaining = bookings.filter(booking => booking._id !== id);
                     setBookings(remaining);
 
